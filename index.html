@@ -4,54 +4,84 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/index.css">
     <link rel="shortcut icon" href="multimedia/img/favicon.png" type="image/x-icon">
-    <script src="js/script.js"></script>
-    <title>Titulo de la web</title>
+    <script src="js/index.js"></script>
+    <title>Título de la web</title>
 </head>
 
 <body>
-    <header>
+    <header id="inicio">
         <!-- Banner -->
         <h1>Lema de la web</h1>
 
         <!-- Menú de navegación -->
         <nav>
             <ul>
-                <li><a href="">Inicio</a></li>
-                <li><a href="">Contenido</a></li>
-                <li><a href="">Contacto</a></li>
-                <li><a href="">Políticas de Privacidad</a></li>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#contenido">Contenido</a></li>
+                <li><a href="#contacto">Formulario de Contacto</a></li>
+                <li><a href="privacidad.html">Leer políticas de privacidad</a></li>
             </ul>
         </nav>
     </header>
 
-    <section>
-        <!-- Contingut Principal 1 -->
-        <article>
-            <h2>Titulo del contenido 1</h2>
-            <p>Este es el contenido principal 1</p>
-            <img src="" alt="" srcset="">
-        </article>
+    <main id="contenido">
+        <!-- Contenido Principal-->
+        <section>
+            <h2>Sección de Contenido Principal</h2>
+            <!-- Contenido Principal 1 -->
+            <article>
+                <h3>Título del contenido 1</h3>
+                <p>Este es el contenido principal 1</p>
+                <!--<img src="" alt="" srcset="">-->
+            </article>
 
-        <!-- Contingut Principal 2 -->
-        <article>
-            <h2>Titulo del contenido 2</h2>
-            <p>Este es el contenido principal 2</p>
-            <img src="" alt="" srcset="">
-        </article>
+            <!-- Contenido Principal 2 -->
+            <article>
+                <h3>Título del contenido 2</h3>
+                <p>Este es el contenido principal 2</p>
+                <!--<img src="" alt="" srcset="">-->
+            </article>
+        </section>
+
+        <aside>
+            <!-- Contenido lateral/secundario -->
+            <h3>Título del contenido lateral/secundario</h3>
+            <p>Este es el contenido lateral/secundario</p>
+            <!--<img src="" alt="" srcset="">-->
+        </aside>
+    </main>
+    <section id="contacto">
+        <!-- Formulario de Contacto -->
+        <h2>Formulario de Contacto</h2>
+        <form action="#" method="post">
+            <h3>Formulario de Contacto</h3>
+            <p>
+                <label for="name">Nombre</label>
+                <input name="name" id="name" type="text" placeholder="Tu nombre" required="">
+            </p>
+            <p>
+                <label for="email">E-mail</label>
+                <input name="email" id="email" type="email" placeholder="tuemail@ejemplo.com" required="">
+            </p>
+            <p>
+                <label for="comment">Comentario</label>
+                <textarea name="comment" id="comment" placeholder="Escribe tu comentario aquí" required=""></textarea>
+            </p>
+            <p><input type="submit" value="Enviar comentario"></p>
+        </form>
     </section>
-
-    <aside>
-        <!-- Contenido lateral/secundario -->
-        <h3>Titulo del contenido lateral/secundario</h3>
-        <p>Este es el contenido lateral/secundario</p>
-        <img src="" alt="" srcset="">
-    </aside>
 
     <footer>
         <!-- Pie de pagina -->
+        <a href="#inicio">Vuelta al inicio</a>
         <p>&copy; 2024 - 2025</p>
+        <p>
+            <a href="http://jigsaw.w3.org/css-validator/check/referer">
+                <img style="border:0;width:88px;height:31px" src="http://jigsaw.w3.org/css-validator/images/vcss-blue" alt="¡CSS Válido!"/>
+            </a>
+        </p>            
     </footer>
 </body>
 
