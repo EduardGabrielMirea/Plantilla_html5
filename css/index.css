@@ -125,6 +125,12 @@ footer {
     margin-top: auto; 
 }
 
+    #validator a img {
+        border:0;
+        width:88px;
+        height:31px;
+    }
+
 footer a {
     color: white;
     text-decoration: none;
@@ -133,3 +139,4 @@ footer a {
 footer a:hover {
     text-decoration: underline;
 }
+
