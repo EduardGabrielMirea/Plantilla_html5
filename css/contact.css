@@ -1,0 +1,288 @@
+/* Estilos generales */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header, footer, section,div, aside, nav, article {
+	display: block;
+}
+
+body {
+	margin: 0 auto; 
+	padding: 22px 0;
+	width: 940px;
+	font: 13px/22px;
+	/*font: 13px/22px Helvetica, Arial, sans-serif;*/
+	background: #f0f0f0;
+
+}
+
+h1, h2 {
+	font-family: 'Qwitcher';
+	font-weight: bold;
+    font-size: 50px;
+    line-height: 44px;
+    padding: 22px 0;
+}
+
+h3 {
+	font-family: 'Qwitcher';
+	font-weight: bold;
+	font-size: 25px;
+	line-height: 22px;
+	padding: 11px 0;
+}
+
+p {
+	padding-bottom: 22px;
+}
+
+
+/* Header */
+header {
+    background-color: black; /* Fondo negro para el header */
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+/*------------------------------
+=NAVIGATION
+------------------------------*/
+nav {
+	position: absolute;
+	left: 0;
+	width: 100%;
+	background: url("../multimedia/img/nav_background.png");
+}
+
+	nav ul {
+		margin: 0 auto;
+		width: 940px;
+		list-style: none;
+	}
+
+		nav ul li {
+			float: left;
+		}
+
+			nav ul li a {
+				display: block;
+				margin-right: 20px;
+				width: 140px;
+				font-size: 14px;
+				line-height: 44px;
+				text-align: center;
+				text-decoration: none;
+				color: #777;
+
+			}
+
+				nav ul li a:hover {
+					color: #fff;
+				}
+
+			nav ul li.selected a {
+				color: #fff;
+			}
+
+			nav ul li.subscribe a {
+				margin-left: 22px;
+				padding-left: 33px;
+				text-align: left;
+				background-image: url("../multimedia/img/rss.png");
+				background-position: left center;
+				background-repeat: no-repeat;
+			}
+
+
+/* Main */
+
+
+/* Aside */
+
+/*------------------------------
+=CONTACT FORM STYLING (Fully Responsive)
+------------------------------*/
+
+.contactForm {
+    margin: 5vw auto;
+    padding: 5vw;
+    width: 90%;
+    max-width: 600px;
+    background: #f9f9f9;
+    border-radius: 11px;
+    box-shadow: 3px 3px 7px #777;
+    font-family: 'Imbue', sans-serif;
+}
+
+.contactForm label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+.contactForm input[type="text"],
+.contactForm input[type="email"],
+.contactForm input[type="password"],
+.contactForm input[type="date"],
+.contactForm input[type="number"],
+.contactForm input[type="color"] {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #d7d7d7;
+    border-radius: 5px;
+    box-shadow: inset 1px 1px 3px #ccc;
+    font-size: 1em;
+}
+
+.contactForm input[type="text"][required]:invalid,
+.contactForm input[type="email"][required]:invalid,
+.contactForm input[type="password"][required]:invalid {
+    border: 2px solid #e74c3c; /* Red border for invalid fields */
+}
+
+.contactForm input[type="text"][required]:valid,
+.contactForm input[type="email"][required]:valid,
+.contactForm input[type="password"][required]:valid {
+    border: 2px solid #2ecc71; /* Green border for valid fields */
+}
+
+.contactForm input[type="submit"] {
+    display: block;
+    width: 100%;
+    max-width: 300px;
+    padding: 15px;
+    background: #467612;
+    color: #fff;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s ease;
+    margin: 0 auto;
+    font-size: 1.2em;
+}
+
+.contactForm input[type="submit"]:hover {
+    background: #35630e;
+}
+
+/* Responsive Styles for All Screen Types */
+@media (max-width: 1024px) {
+    .contactForm {
+        padding: 4vw;
+    }
+    .contactForm label {
+        font-size: 1em;
+    }
+    .contactForm input[type="submit"] {
+        width: 90%;
+    }
+}
+
+@media (max-width: 768px) {
+    .contactForm {
+        padding: 3vw;
+    }
+    .contactForm label {
+        font-size: 0.9em;
+    }
+    .contactForm input[type="submit"] {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .contactForm {
+        padding: 2vw;
+    }
+    .contactForm label {
+        font-size: 0.85em;
+    }
+    .contactForm input[type="submit"] {
+        width: 100%;
+        padding: 12px;
+    }
+    .contactForm input[type="text"],
+    .contactForm input[type="email"],
+    .contactForm input[type="password"],
+    .contactForm input[type="date"],
+    .contactForm input[type="number"],
+    .contactForm input[type="color"] {
+        font-size: 0.9em;
+    }
+}
+
+/*------------------------------
+=FOOTER
+------------------------------*/
+footer {
+    position: absolute;
+	left: 0;
+	width: 100%;
+	background: #222;
+}
+
+	footer div {
+		display: table;
+		margin: 0 auto;
+		padding: 44px 0;
+		width: 940px;
+		color: #777;
+	}
+	
+		footer div #reward{
+			display: table-cell;
+			
+		}
+			#validator{
+				display: table-cell;
+				width: 100px;
+			}
+			
+				#validator a img {
+					border:0;
+					width:88px;
+					height:31px;
+				}
+
+			#copy{
+				width: 100px;
+			}
+			
+		footer div section {
+			display: table-cell;
+			width: 300px;
+		}
+		
+		footer div #about, footer div #blogroll {
+			padding-right: 20px;
+		}
+		
+	footer h3 {
+		color: #FFF;
+	}
+	
+	footer a {
+		color: #999;
+	}
+	
+		footer a:hover {
+			color: #FFF;
+			text-decoration: none;
+		}
+	
+	footer ul {
+		margin: 0 0 0 40px;
+		list-style: square;
+		color: #565656;
+	}
+	
+		footer ul li a {
+			display: block;
+		}

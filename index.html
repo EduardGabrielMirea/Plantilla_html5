@@ -14,17 +14,18 @@
     <header id="inicio">
         <!-- Banner -->
         <h1>Lema de la web</h1>
-
-        <!-- Menú de navegación -->
-        <nav>
-            <ul>
-                <li><a href="#inicio">Inicio</a></li>
-                <li><a href="#contenido">Contenido</a></li>
-                <li><a href="#contacto">Formulario de Contacto</a></li>
-                <li><a href="privacidad.html">Leer políticas de privacidad</a></li>
-            </ul>
-        </nav>
     </header>
+    
+    <!-- Menú de navegación -->
+    <nav>
+        <ul>
+            <li class="selected"><a href="#inicio">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Archives</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li class="subscribe"><a href="#">Subscribe via. RSS</a></li>
+        </ul>
+    </nav>
 
     <main id="contenido">
         <!-- Contenido Principal-->
@@ -34,14 +35,30 @@
             <article>
                 <h3>Título del contenido 1</h3>
                 <p>Este es el contenido principal 1</p>
-                <!--<img src="" alt="" srcset="">-->
+                <video id="introVideo" controls reload="metadata" crossorigin="anonymous">
+                    <source src="multimedia/video/video.mp4" type="video/mp4">
+                    <source src="multimedia/video/video.webm" type="video/webm">
+                </video>
+                <p>descripción</p>
+                <audio id="introAudio" controls preload="metadata" crossorigin="anonymous">
+                    <source src="multimedia/audio/audio.mp3" type="audio/mp3">
+                    <source src="multimedia/audio/audio.ogg" type="audio/ogg">
+                </audio>
             </article>
 
             <!-- Contenido Principal 2 -->
             <article>
                 <h3>Título del contenido 2</h3>
                 <p>Este es el contenido principal 2</p>
-                <!--<img src="" alt="" srcset="">-->
+                <video id="introVideo" controls reload="metadata" crossorigin="anonymous">
+                    <source src="multimedia/video/video.mp4" type="video/mp4">
+                    <source src="multimedia/video/video.webm" type="video/webm">
+                </video>
+                <p>descripción</p>
+                <audio id="introAudio" controls preload="metadata" crossorigin="anonymous">
+                    <source src="multimedia/audio/audio.mp3" type="audio/mp3">
+                    <source src="multimedia/audio/audio.ogg" type="audio/ogg">
+                </audio>
             </article>
         </section>
 
@@ -50,37 +67,61 @@
             <h3>Título del contenido lateral/secundario</h3>
             <p>Este es el contenido lateral/secundario</p>
             <!--<img src="" alt="" srcset="">-->
+            <section>
+                <h3>Google location</h3>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.019624152643!2d-122.41941648468155!3d37.7749297797586!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8085808c3e8d4b5f%3A0x7d2d37f1542334a8!2sSan+Francisco%2C+CA!5e0!3m2!1sen!2sus!4v1618334728123!5m2!1sen!2sus" allowfullscreen="" loading="lazy"></iframe>
+                <p>Ubicación. Si no puedes ver el mapa, haz clic aquí: <a href="https://www.google.com/maps/place/San+Francisco,+CA">Visualiza este contenido.</a></p>
+            </section>
         </aside>
     </main>
-    <section id="contacto">
-        <!-- Formulario de Contacto -->
-        <h2>Formulario de Contacto</h2>
-        <form action="#" method="post">
-            <p>
-                <label for="name">Nombre</label>
-                <input name="name" id="name" type="text" placeholder="Tu nombre" required="">
-            </p>
-            <p>
-                <label for="email">E-mail</label>
-                <input name="email" id="email" type="email" placeholder="tuemail@ejemplo.com" required="">
-            </p>
-            <p>
-                <label for="comment">Comentario</label>
-                <textarea name="comment" id="comment" placeholder="Escribe tu comentario aquí" required=""></textarea>
-            </p>
-            <p><input type="submit" value="Enviar comentario"></p>
-        </form>
-    </section>
 
     <footer>
         <!-- Pie de pagina -->
-        <a href="#inicio">Vuelta al inicio</a>
-        <p>&copy; 2024 - 2025</p>
-        <p id="validator">
-            <a href="http://jigsaw.w3.org/css-validator/check/referer">
-                <img src="http://jigsaw.w3.org/css-validator/images/vcss-blue" alt="¡CSS Válido!">
-            </a>
-        </p>            
+        <div>
+            <section id="about">
+                <h3>About</h3>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                    <a href="#">laboris nisi ut aliquip</a> ex ea commodo consequat. Duis aute irure dolor in
+                    reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+                    occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                </p>
+            </section>
+
+            <section id="blogroll">
+                <h3>Blogroll</h3>
+                <ul>
+                    <li><a href="#">NETTUTS+</a></li>
+                    <li><a href="#">FreelanceSwitch</a></li>
+                    <li><a href="#">In The Woods</a></li>
+                    <li><a href="#">Netsetter</a></li>
+                    <li><a href="#">PSDTUTS+</a></li>
+                </ul>
+            </section>
+
+            <section id="popular">
+                <h3>Popular</h3>
+                <ul>
+                    <li><a href="#">This is the title of a blog post</a></li>
+                    <li><a href="#">Lorem ipsum dolor sit amet</a></li>
+                    <li><a href="#">Consectetur adipisicing elit, sed do eiusmod</a></li>
+                    <li><a href="#">Duis aute irure dolor</a></li>
+                    <li><a href="#">Excepteur sint occaecat cupidatat</a></li>
+                    <li><a href="#">Reprehenderit in voluptate velit</a></li>
+                    <li><a href="#">Officia deserunt mollit anim id est laborum</a></li>
+                    <li><a href="#">Lorem ipsum dolor sit amet</a></li>
+                </ul>
+            </section>
+        </div>
+        <div id="reward">
+            <p id="validator">
+                <a href="http://jigsaw.w3.org/css-validator/check/referer">
+                    <img src="http://jigsaw.w3.org/css-validator/images/vcss-blue" alt="¡CSS Válido!">
+                </a>
+            </p>
+            <p id="copy">&copy; 2024 - 2025</p>
+        </div>   
     </footer>
 </body>
 
